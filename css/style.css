@@ -1,0 +1,23 @@
+html, body {
+  height: 100%;
+  font-family: 'Spartan', sans-serif;
+}
+
+.main {
+  height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100); /* trick to viewport units on mobile (check <script> in index.html) */
+}
+
+.item {
+  height: fit-content;
+  width: fit-content;
+}
+
+.footer {
+  font-size: 0.875em;
+  opacity: 0.6;
+}
+
+a img:hover {
+  opacity: 0.5;
+}
